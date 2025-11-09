@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 // Configure CORS to allow frontend origins and handle preflight
-const allowedOrigins = (process.env.CORS_ORIGINS || 'http://localhost:5173')
+const allowedOrigins = (process.env.CORS_ORIGINS || 'http://localhost:5173,https://niit-quiz.vercel.app')
   .split(',')
   .map(o => o.trim())
   .filter(Boolean);
